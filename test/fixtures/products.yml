@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  decimal: 1.5
+  color: MyString
+
+two:
+  name: MyString
+  decimal: 1.5
+  color: MyString

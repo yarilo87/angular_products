@@ -1,0 +1,27 @@
+<div ng-controller="ProductsController">
+  <input type="text" data-ng-model="search.color">
+  <table class="table">
+		<thead>
+      <tr>
+        <th>name</th>
+        <th>color</th>
+        <th>price</th>
+      </tr>
+    </thead>
+	  <tr ng-repeat="product in products | orderBy: 'name' | filter: search">
+	  	<td>
+        {{product.name}}
+      </td>
+      <td>
+        {{product.color}}
+      </td>
+      <td>
+        {{product.price | currency}}
+      </td>
+      <td>
+        <button class="btn btn-info pull-right" ng-click="addToKart(product)">Add to Kart</button>
+      </td>
+		</li>
+	</table>
+  <product-form></product-form>
+</div>

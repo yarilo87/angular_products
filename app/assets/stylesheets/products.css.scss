@@ -1,0 +1,94 @@
+// Place all the styles related to the Products controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.ng-invalid.ng-dirty {
+	border-color: red;
+}
+
+.ng-valid.ng-dirty {
+	border-color: green;
+}
+
+#headerWrapper {
+    width: 100%;
+	height: 80px;
+}
+
+.logo {
+    padding: 10px;
+    margin-right: 10x;
+    font-size: 35px;
+    font-family: fantasy;
+}
+
+.tagline {
+    font-size: 10px;
+    margin-top: 50px;
+    margin-left: -123px;
+    font-family: monospace;
+}
+
+.nav-wrapper {
+    margin-left: 100px;
+    margin-top: 15px;
+}
+
+#productListWrapper {
+	width: 100%;
+	padding: 10px;
+}
+
+#productListWrapper input {
+	width: 25%;
+}
+
+#productListWrapper .product {
+	border: 1px solid gray;
+	padding: 10px;
+	margin-bottom: 10px;	
+    position: relative;
+}
+
+#productListWrapper .product .product-details {
+	margin-left: 160px;
+}
+
+.container.ng-enter {
+    -webkit-transition:0.5s linear all;
+     -moz-transition:0.5s linear all;
+     -o-transition:0.5s linear all;
+     transition:0.5s linear all;
+     opacity:0;
+}
+
+.container.ng-enter-active {
+     opacity:1;
+}
+
+.product.ng-leave {
+    -webkit-transition:0.5s linear all;
+     -moz-transition:0.5s linear all;
+     -o-transition:0.5s linear all;
+     transition:0.5s linear all;
+     opacity:1;
+     left: 0;
+}
+
+.product.ng-leave-active {
+    opacity:0;
+    left: 600px;
+}
+
+.product.ng-enter {
+    -webkit-transition:0.5s linear all;
+     -moz-transition:0.5s linear all;
+     -o-transition:0.5s linear all;
+     transition:0.5s linear all;
+     opacity:0;
+     left: 600px;
+}
+
+.product.ng-enter-active {
+    opacity:1;
+    left: 0;
+}

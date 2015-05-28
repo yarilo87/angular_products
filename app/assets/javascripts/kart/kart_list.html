@@ -1,0 +1,17 @@
+<div id="productListWrapper">
+	<p>Please click on a buy button to buy a product</p>
+	<div>
+	<ul class="list-unstyled">
+		<li class="product" =
+			ng-repeat="product in kart">
+			<div class="product-details clearfix">
+				<h3>{{product.name}}</h3>
+				<p>{{product.price | currency:'USD.'}}</p>
+				<ul class="list-unstyled list-inline">
+					<li>color: {{product.color}}</li>
+				</ul>
+				<button class="btn btn-info pull-right" ng-click="buy(product)">Buy</button>
+			</div>
+		</li>
+	</ul>
+</div>
